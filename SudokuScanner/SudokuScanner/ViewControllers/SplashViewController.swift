@@ -22,7 +22,8 @@ class SplashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("\(OpenCVWarpper.openCVVersionString())")
+
         setupLayout()
     }
     

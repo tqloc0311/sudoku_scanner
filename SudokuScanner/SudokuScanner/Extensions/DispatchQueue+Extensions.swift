@@ -9,8 +9,15 @@ import Foundation
 
 extension DispatchQueue {
 
-    func execute(onBackground: () -> Void, onMain: () -> Void) {
-        
+    static func executeOnBackground<T>(_ onBackground: (() -> T)?, completionOnMain: ((T?) -> Void)?) {
+        DispatchQueue.global().async {
+            
+            let result = onBackground?()
+            
+            DispatchQueue.main.async {
+                completionOnMain?(result)
+            }
+        }
     }
     
 }

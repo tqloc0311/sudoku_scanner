@@ -16,10 +16,12 @@ class ImageProcessor {
     var adjustValue: CGFloat = 0.5
     
     func process(image: UIImage, completion: ImageProcessorCompletion?) {
-        DispatchQueue.global().async { [weak self] in
+        DispatchQueue.executeOnBackground { [weak self] in
             let preprocessResult = self?.preprocessImage(image)
-            DispatchQueue.main.async {
-                completion?(preprocessResult)
+            return preprocessResult
+        } completionOnMain: { preprocessResult in
+            if let result = preprocessResult {
+                completion?(result)
             }
         }
     }

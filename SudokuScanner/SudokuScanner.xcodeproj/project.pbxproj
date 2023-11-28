@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0422DDDD2B15A11E0075E849 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DDDC2B15A11E0075E849 /* DispatchQueue+Extensions.swift */; };
+		0422DDE32B15C4030075E849 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0422DDE22B15C4030075E849 /* OpenCVWrapper.mm */; };
 		4A40E64029D0145600026942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40E63F29D0145600026942 /* AppDelegate.swift */; };
 		4A40E64229D0145600026942 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40E64129D0145600026942 /* SceneDelegate.swift */; };
 		4A40E64A29D0145600026942 /* SudokuScanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A40E64829D0145600026942 /* SudokuScanner.xcdatamodeld */; };
@@ -44,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		0422DDDC2B15A11E0075E849 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		0422DDE12B15C4030075E849 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		0422DDE22B15C4030075E849 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		4A40E63C29D0145600026942 /* SudokuScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SudokuScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A40E63F29D0145600026942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A40E64129D0145600026942 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +109,15 @@
 				0422DDDC2B15A11E0075E849 /* DispatchQueue+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0422DDE02B15C3EB0075E849 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				0422DDE12B15C4030075E849 /* OpenCVWrapper.h */,
+				0422DDE22B15C4030075E849 /* OpenCVWrapper.mm */,
+			);
+			path = OpenCV;
 			sourceTree = "<group>";
 		};
 		4A40E63329D0145600026942 = {
@@ -209,6 +221,7 @@
 		4A40E68729D09C4F00026942 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				0422DDE02B15C3EB0075E849 /* OpenCV */,
 				4A40E68529D0987200026942 /* ImageProcessor.swift */,
 			);
 			path = Utilities;
@@ -501,6 +514,7 @@
 				4A40E64229D0145600026942 /* SceneDelegate.swift in Sources */,
 				4A40E67929D0195C00026942 /* ScanViewController.swift in Sources */,
 				4A40E68329D095AD00026942 /* CameraView.swift in Sources */,
+				0422DDE32B15C4030075E849 /* OpenCVWrapper.mm in Sources */,
 				4A40E68629D0987200026942 /* ImageProcessor.swift in Sources */,
 				4A40E64A29D0145600026942 /* SudokuScanner.xcdatamodeld in Sources */,
 				4A40E67329D015B400026942 /* SplashViewController.swift in Sources */,
@@ -601,7 +615,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -655,7 +669,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -685,7 +699,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.loctq.sudokuscanner;
@@ -721,7 +735,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.loctq.sudokuscanner;
@@ -746,7 +760,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 89R2YFZ794;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loctq.SudokuScannerTests;
@@ -771,7 +785,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 89R2YFZ794;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loctq.SudokuScannerTests;
@@ -794,6 +808,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 89R2YFZ794;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loctq.SudokuScannerUITests;
@@ -816,6 +831,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 89R2YFZ794;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loctq.SudokuScannerUITests;
