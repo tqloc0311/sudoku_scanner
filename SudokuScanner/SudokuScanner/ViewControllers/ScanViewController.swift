@@ -40,12 +40,6 @@ class ScanViewController: UIViewController {
         setupLayout()
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        
-    }
-    
     private func setupLayout() {
         
         // add camera view
@@ -62,10 +56,10 @@ class ScanViewController: UIViewController {
         previewImageView.layer.borderWidth = 1
         previewImageView.clipsToBounds = true
         previewImageView.snp.makeConstraints { make in
-//            make.width.equalToSuperview().multipliedBy(1.0 / 3.0)
-//            make.height.equalToSuperview().multipliedBy(1.0 / 3.0)
-//            make.leading.equalToSuperview().offset(16)
-//            make.bottom.equalTo(view.safeAreaLayoutGuide).inset(16)
+            make.width.equalToSuperview().multipliedBy(1.0 / 3.0)
+            make.height.equalToSuperview().multipliedBy(1.0 / 3.0)
+            make.leading.equalToSuperview().offset(16)
+            make.bottom.equalTo(view.safeAreaLayoutGuide).inset(16)
             make.edges.equalToSuperview()
         }
         

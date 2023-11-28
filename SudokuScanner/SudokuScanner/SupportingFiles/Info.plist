@@ -19,7 +19,5 @@
 			</array>
 		</dict>
 	</dict>
-    <key>NSCameraUsageDescription</key>
-    <string>This app uses the camera to scan Sudoku puzzles and provide solutions to the user. We do not store any images or videos taken by the camera, and we respect your privacy. By using this app, you agree to allow us to access your camera in order to provide this feature.</string>
 </dict>
 </plist>

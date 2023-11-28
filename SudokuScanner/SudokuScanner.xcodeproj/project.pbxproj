@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0422DDDD2B15A11E0075E849 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DDDC2B15A11E0075E849 /* DispatchQueue+Extensions.swift */; };
 		4A40E64029D0145600026942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40E63F29D0145600026942 /* AppDelegate.swift */; };
 		4A40E64229D0145600026942 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40E64129D0145600026942 /* SceneDelegate.swift */; };
 		4A40E64A29D0145600026942 /* SudokuScanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A40E64829D0145600026942 /* SudokuScanner.xcdatamodeld */; };
@@ -17,9 +18,11 @@
 		4A40E66629D0145800026942 /* SudokuScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40E66529D0145800026942 /* SudokuScannerUITestsLaunchTests.swift */; };
 		4A40E67329D015B400026942 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40E67229D015B400026942 /* SplashViewController.swift */; };
 		4A40E67929D0195C00026942 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40E67829D0195C00026942 /* ScanViewController.swift */; };
-		4A40E68129D0794300026942 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4A40E68029D0794300026942 /* SnapKit */; };
 		4A40E68329D095AD00026942 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40E68229D095AD00026942 /* CameraView.swift */; };
 		4A40E68629D0987200026942 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40E68529D0987200026942 /* ImageProcessor.swift */; };
+		66EF3E895154BF05897037F7 /* Pods_SudokuScanner_SudokuScannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BEC1DE63D382D88CA8B95E /* Pods_SudokuScanner_SudokuScannerUITests.framework */; };
+		6D232A9F95473326FF325EA2 /* Pods_SudokuScannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB9766DEB6F40E82BB9C7ED /* Pods_SudokuScannerTests.framework */; };
+		E30D86F69004FCA01D8E71BC /* Pods_SudokuScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D457B90CF0FED71CDEEFFC50 /* Pods_SudokuScanner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0422DDDC2B15A11E0075E849 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
 		4A40E63C29D0145600026942 /* SudokuScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SudokuScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A40E63F29D0145600026942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A40E64129D0145600026942 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,15 @@
 		4A40E68229D095AD00026942 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		4A40E68529D0987200026942 /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		4A40E68E29D0A6DF00026942 /* SudokuScanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SudokuScanner-Bridging-Header.h"; sourceTree = "<group>"; };
+		6316F405CBCDC1752AA6FC66 /* Pods-SudokuScannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuScannerTests.release.xcconfig"; path = "Target Support Files/Pods-SudokuScannerTests/Pods-SudokuScannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DB91C5A1B7171A7F0E2EEA3 /* Pods-SudokuScanner-SudokuScannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuScanner-SudokuScannerUITests.release.xcconfig"; path = "Target Support Files/Pods-SudokuScanner-SudokuScannerUITests/Pods-SudokuScanner-SudokuScannerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B1D83A7C585731954F07A873 /* Pods-SudokuScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuScanner.release.xcconfig"; path = "Target Support Files/Pods-SudokuScanner/Pods-SudokuScanner.release.xcconfig"; sourceTree = "<group>"; };
+		BDB9766DEB6F40E82BB9C7ED /* Pods_SudokuScannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudokuScannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C331A738E56D3E47FF0C515A /* Pods-SudokuScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuScanner.debug.xcconfig"; path = "Target Support Files/Pods-SudokuScanner/Pods-SudokuScanner.debug.xcconfig"; sourceTree = "<group>"; };
+		D457B90CF0FED71CDEEFFC50 /* Pods_SudokuScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudokuScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6AE7A4A6C3C9AF8DA3607C3 /* Pods-SudokuScannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuScannerTests.debug.xcconfig"; path = "Target Support Files/Pods-SudokuScannerTests/Pods-SudokuScannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0BEC1DE63D382D88CA8B95E /* Pods_SudokuScanner_SudokuScannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudokuScanner_SudokuScannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5705D4832D61E78A92CA024 /* Pods-SudokuScanner-SudokuScannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuScanner-SudokuScannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SudokuScanner-SudokuScannerUITests/Pods-SudokuScanner-SudokuScannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A40E68129D0794300026942 /* SnapKit in Frameworks */,
+				E30D86F69004FCA01D8E71BC /* Pods_SudokuScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D232A9F95473326FF325EA2 /* Pods_SudokuScannerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +93,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66EF3E895154BF05897037F7 /* Pods_SudokuScanner_SudokuScannerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0422DDDE2B15A1210075E849 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0422DDDC2B15A11E0075E849 /* DispatchQueue+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4A40E63329D0145600026942 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +115,8 @@
 				4A40E65829D0145700026942 /* SudokuScannerTests */,
 				4A40E66229D0145700026942 /* SudokuScannerUITests */,
 				4A40E63D29D0145600026942 /* Products */,
+				C3D178649632E906975E980E /* Pods */,
+				6E92F7256D3AAC2E19BFB5C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,13 +133,13 @@
 		4A40E63E29D0145600026942 /* SudokuScanner */ = {
 			isa = PBXGroup;
 			children = (
-				4A40E68829D0A51400026942 /* Frameworks */,
 				4A40E67529D0187200026942 /* SupportingFiles */,
 				4A40E67729D0188F00026942 /* ViewControllers */,
 				4A40E67629D0188200026942 /* Resources */,
 				4A40E67429D0185E00026942 /* CoreData */,
 				4A40E68429D095D800026942 /* Views */,
 				4A40E68729D09C4F00026942 /* Utilities */,
+				0422DDDE2B15A1210075E849 /* Extensions */,
 			);
 			path = SudokuScanner;
 			sourceTree = "<group>";
@@ -189,11 +214,27 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		4A40E68829D0A51400026942 /* Frameworks */ = {
+		6E92F7256D3AAC2E19BFB5C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D457B90CF0FED71CDEEFFC50 /* Pods_SudokuScanner.framework */,
+				F0BEC1DE63D382D88CA8B95E /* Pods_SudokuScanner_SudokuScannerUITests.framework */,
+				BDB9766DEB6F40E82BB9C7ED /* Pods_SudokuScannerTests.framework */,
 			);
-			path = Frameworks;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3D178649632E906975E980E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C331A738E56D3E47FF0C515A /* Pods-SudokuScanner.debug.xcconfig */,
+				B1D83A7C585731954F07A873 /* Pods-SudokuScanner.release.xcconfig */,
+				F5705D4832D61E78A92CA024 /* Pods-SudokuScanner-SudokuScannerUITests.debug.xcconfig */,
+				7DB91C5A1B7171A7F0E2EEA3 /* Pods-SudokuScanner-SudokuScannerUITests.release.xcconfig */,
+				E6AE7A4A6C3C9AF8DA3607C3 /* Pods-SudokuScannerTests.debug.xcconfig */,
+				6316F405CBCDC1752AA6FC66 /* Pods-SudokuScannerTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,18 +244,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A40E66929D0145800026942 /* Build configuration list for PBXNativeTarget "SudokuScanner" */;
 			buildPhases = (
+				D991307B040B1C5ED1799EFE /* [CP] Check Pods Manifest.lock */,
 				4A40E63829D0145600026942 /* Sources */,
+				0422DDDF2B15A21F0075E849 /* SwiftLint */,
 				4A40E63929D0145600026942 /* Frameworks */,
 				4A40E63A29D0145600026942 /* Resources */,
+				2E572D8778C88F1C70418401 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SudokuScanner;
-			packageProductDependencies = (
-				4A40E68029D0794300026942 /* SnapKit */,
-			);
 			productName = SudokuScanner;
 			productReference = 4A40E63C29D0145600026942 /* SudokuScanner.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A40E66C29D0145800026942 /* Build configuration list for PBXNativeTarget "SudokuScannerTests" */;
 			buildPhases = (
+				1FBD926399D003BFF0254F79 /* [CP] Check Pods Manifest.lock */,
 				4A40E65129D0145700026942 /* Sources */,
 				4A40E65229D0145700026942 /* Frameworks */,
 				4A40E65329D0145700026942 /* Resources */,
@@ -241,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A40E66F29D0145800026942 /* Build configuration list for PBXNativeTarget "SudokuScannerUITests" */;
 			buildPhases = (
+				2F289A3C732B788140B18289 /* [CP] Check Pods Manifest.lock */,
 				4A40E65B29D0145700026942 /* Sources */,
 				4A40E65C29D0145700026942 /* Frameworks */,
 				4A40E65D29D0145700026942 /* Resources */,
+				AC02A85B5CCF1B3C9CA2ECD1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,9 +332,6 @@
 				Base,
 			);
 			mainGroup = 4A40E63329D0145600026942;
-			packageReferences = (
-				4A40E67F29D0794300026942 /* XCRemoteSwiftPackageReference "SnapKit" */,
-			);
 			productRefGroup = 4A40E63D29D0145600026942 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,12 +369,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0422DDDF2B15A21F0075E849 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		1FBD926399D003BFF0254F79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SudokuScannerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E572D8778C88F1C70418401 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SudokuScanner/Pods-SudokuScanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SudokuScanner/Pods-SudokuScanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SudokuScanner/Pods-SudokuScanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F289A3C732B788140B18289 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SudokuScanner-SudokuScannerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC02A85B5CCF1B3C9CA2ECD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SudokuScanner-SudokuScannerUITests/Pods-SudokuScanner-SudokuScannerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SudokuScanner-SudokuScannerUITests/Pods-SudokuScanner-SudokuScannerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SudokuScanner-SudokuScannerUITests/Pods-SudokuScanner-SudokuScannerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D991307B040B1C5ED1799EFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SudokuScanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A40E63829D0145600026942 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4A40E64029D0145600026942 /* AppDelegate.swift in Sources */,
+				0422DDDD2B15A11E0075E849 /* DispatchQueue+Extensions.swift in Sources */,
 				4A40E64229D0145600026942 /* SceneDelegate.swift in Sources */,
 				4A40E67929D0195C00026942 /* ScanViewController.swift in Sources */,
 				4A40E68329D095AD00026942 /* CameraView.swift in Sources */,
@@ -437,7 +601,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -491,7 +655,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -503,6 +667,7 @@
 		};
 		4A40E66A29D0145800026942 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C331A738E56D3E47FF0C515A /* Pods-SudokuScanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -510,36 +675,35 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 89R2YFZ794;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SudokuScanner/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(PROJECT_DIR)/SudokuScanner/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Sudoku Scanner";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to scan Sudoku puzzles and provide solutions to the user. We do not store any images or videos taken by the camera, and we respect your privacy. By using this app, you agree to allow us to access your camera in order to provide this feature.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0.0;
-				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loctq.sudokuscanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "SudokuScanner/SupportingFiles/SudokuScanner-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4A40E66B29D0145800026942 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D83A7C585731954F07A873 /* Pods-SudokuScanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -547,35 +711,34 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 89R2YFZ794;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SudokuScanner/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(PROJECT_DIR)/SudokuScanner/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Sudoku Scanner";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to scan Sudoku puzzles and provide solutions to the user. We do not store any images or videos taken by the camera, and we respect your privacy. By using this app, you agree to allow us to access your camera in order to provide this feature.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0.0;
-				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loctq.sudokuscanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "SudokuScanner/SupportingFiles/SudokuScanner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		4A40E66D29D0145800026942 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6AE7A4A6C3C9AF8DA3607C3 /* Pods-SudokuScannerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -583,19 +746,24 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 89R2YFZ794;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loctq.SudokuScannerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SudokuScanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SudokuScanner";
 			};
 			name = Debug;
 		};
 		4A40E66E29D0145800026942 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6316F405CBCDC1752AA6FC66 /* Pods-SudokuScannerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -603,49 +771,61 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 89R2YFZ794;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loctq.SudokuScannerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SudokuScanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SudokuScanner";
 			};
 			name = Release;
 		};
 		4A40E67029D0145800026942 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5705D4832D61E78A92CA024 /* Pods-SudokuScanner-SudokuScannerUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 89R2YFZ794;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loctq.SudokuScannerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = SudokuScanner;
 			};
 			name = Debug;
 		};
 		4A40E67129D0145800026942 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB91C5A1B7171A7F0E2EEA3 /* Pods-SudokuScanner-SudokuScannerUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 89R2YFZ794;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loctq.SudokuScannerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = SudokuScanner;
 			};
 			name = Release;
@@ -690,25 +870,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		4A40E67F29D0794300026942 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		4A40E68029D0794300026942 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4A40E67F29D0794300026942 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4A40E64829D0145600026942 /* SudokuScanner.xcdatamodeld */ = {

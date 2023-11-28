@@ -1,0 +1,24 @@
+PODS:
+  - OpenCV (4.3.0)
+  - SnapKit (5.6.0)
+  - SwiftLint (0.54.0)
+
+DEPENDENCIES:
+  - OpenCV (= 4.3.0)
+  - SnapKit (= 5.6.0)
+  - SwiftLint (= 0.54.0)
+
+SPEC REPOS:
+  trunk:
+    - OpenCV
+    - SnapKit
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  OpenCV: 681e0451c1e54c5930a8922277f817ed5d5ab459
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftLint: c1de071d9d08c8aba837545f6254315bc900e211
+
+PODFILE CHECKSUM: 0aae871c333f23aabba9ec3390d5431f5dfcc966
+
+COCOAPODS: 1.12.1
