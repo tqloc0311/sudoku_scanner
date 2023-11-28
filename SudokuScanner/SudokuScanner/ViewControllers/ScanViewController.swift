@@ -107,9 +107,9 @@ class ScanViewController: UIViewController {
 extension ScanViewController: CameraViewDelegate {
     
     func cameraView(_ view: CameraView, didCapture image: UIImage) {
-        processor.process(image: image) { [weak self] result in
-            self?.previewImageView.image = result
-        }
+//        processor.process(image: image) { [weak self] result in
+//            self?.previewImageView.image = result
+//        }
         
     }
     

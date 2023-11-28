@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import CoreImage
+import Vision
 
 typealias ImageProcessorCompletion = (UIImage?) -> Void
 
@@ -53,4 +54,40 @@ class ImageProcessor {
         return UIImage(cgImage: cgImage)
     }
 
+    func findContours(in image: UIImage) {
+        // Convert UIImage to CIImage
+        guard let ciImage = CIImage(image: image) else {
+            print("Error converting UIImage to CIImage")
+            return
+        }
+
+        // Create a request for the Vision framework
+        let request = VNDetectContoursRequest()
+
+        // Perform the request using a Vision sequence handler
+        let handler = VNImageRequestHandler(ciImage: ciImage, options: [:])
+
+        do {
+            try handler.perform([request])
+        } catch {
+            print("Error performing Vision request: \(error)")
+            return
+        }
+
+        // Retrieve the results from the request
+        guard let observations = request.results else {
+            print("No contour observations found")
+            return
+        }
+        
+        // Process the contour observations
+        for observation in observations {
+            // Each observation may contain multiple contours
+            for contour in observation.topLevelContours {
+                // `contour.normalizedPoints` contains the normalized points of the contour
+                // You can process or visualize the contours as needed
+                print("Contour points: \(contour.normalizedPoints)")
+            }
+        }
+    }
 }

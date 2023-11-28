@@ -22,7 +22,6 @@ class SplashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("\(OpenCVWarpper.openCVVersionString())")
 
         setupLayout()
     }
@@ -44,6 +43,25 @@ class SplashViewController: UIViewController {
             make.center.equalToSuperview()
             make.width.height.equalTo(100)
         }
+        
+        let previewImageView = UIImageView(frame: .zero)
+        view.addSubview(previewImageView)
+        previewImageView.layer.cornerRadius = 4
+        previewImageView.layer.borderColor = UIColor.white.cgColor
+        previewImageView.layer.borderWidth = 1
+        previewImageView.clipsToBounds = true
+        previewImageView.contentMode = .scaleAspectFit
+        previewImageView.snp.makeConstraints { make in
+//            make.width.equalToSuperview().multipliedBy(1.0 / 3.0)
+//            make.height.equalToSuperview().multipliedBy(1.0 / 3.0)
+//            make.leading.equalToSuperview().offset(16)
+//            make.bottom.equalTo(view.safeAreaLayoutGuide).inset(16)
+            make.edges.equalToSuperview()
+        }
+        
+        let image = UIImage(named: "sample1")!
+        ImageProcessor().findContours(in: image)
+//        previewImageView.image = demo
     }
     
     @objc private func scanButtonHandler() {

@@ -42,7 +42,7 @@ class CameraView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
 
-        previewLayer.frame = bounds
+        previewLayer?.frame = bounds
     }
 
     private func setupLayout() {
