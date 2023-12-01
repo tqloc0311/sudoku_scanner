@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0422DDDD2B15A11E0075E849 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DDDC2B15A11E0075E849 /* DispatchQueue+Extensions.swift */; };
+		04C817752B16E34900B4E10E /* ContourDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C817742B16E34900B4E10E /* ContourDetector.swift */; };
+		04C8177A2B16F1B300B4E10E /* VNContour+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C817792B16F1B300B4E10E /* VNContour+Extensions.swift */; };
+		04C8177C2B17179D00B4E10E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C8177B2B17179D00B4E10E /* SettingsView.swift */; };
+		04C8177E2B1721F300B4E10E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C8177D2B1721F300B4E10E /* Constants.swift */; };
+		04C817802B17230A00B4E10E /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C8177F2B17230A00B4E10E /* UserDefaults+Extensions.swift */; };
+		04C817832B17234A00B4E10E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C817822B17234A00B4E10E /* Settings.swift */; };
+		04C817852B172A0C00B4E10E /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C817842B172A0C00B4E10E /* CGRect+Extensions.swift */; };
+		04FE15A32B19D6E9004F18A2 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE15A22B19D6E9004F18A2 /* UIImage+Extensions.swift */; };
 		4A40E64029D0145600026942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40E63F29D0145600026942 /* AppDelegate.swift */; };
 		4A40E64229D0145600026942 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40E64129D0145600026942 /* SceneDelegate.swift */; };
 		4A40E64A29D0145600026942 /* SudokuScanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A40E64829D0145600026942 /* SudokuScanner.xcdatamodeld */; };
@@ -44,6 +52,14 @@
 
 /* Begin PBXFileReference section */
 		0422DDDC2B15A11E0075E849 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		04C817742B16E34900B4E10E /* ContourDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContourDetector.swift; sourceTree = "<group>"; };
+		04C817792B16F1B300B4E10E /* VNContour+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNContour+Extensions.swift"; sourceTree = "<group>"; };
+		04C8177B2B17179D00B4E10E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		04C8177D2B1721F300B4E10E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04C8177F2B17230A00B4E10E /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		04C817822B17234A00B4E10E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		04C817842B172A0C00B4E10E /* CGRect+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
+		04FE15A22B19D6E9004F18A2 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		4A40E63C29D0145600026942 /* SudokuScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SudokuScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A40E63F29D0145600026942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A40E64129D0145600026942 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,8 +120,20 @@
 			isa = PBXGroup;
 			children = (
 				0422DDDC2B15A11E0075E849 /* DispatchQueue+Extensions.swift */,
+				04C817792B16F1B300B4E10E /* VNContour+Extensions.swift */,
+				04C8177F2B17230A00B4E10E /* UserDefaults+Extensions.swift */,
+				04C817842B172A0C00B4E10E /* CGRect+Extensions.swift */,
+				04FE15A22B19D6E9004F18A2 /* UIImage+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04C817812B17233E00B4E10E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04C817822B17234A00B4E10E /* Settings.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4A40E63329D0145600026942 = {
@@ -133,6 +161,7 @@
 		4A40E63E29D0145600026942 /* SudokuScanner */ = {
 			isa = PBXGroup;
 			children = (
+				04C817812B17233E00B4E10E /* Models */,
 				4A40E67529D0187200026942 /* SupportingFiles */,
 				4A40E67729D0188F00026942 /* ViewControllers */,
 				4A40E67629D0188200026942 /* Resources */,
@@ -202,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				4A40E68229D095AD00026942 /* CameraView.swift */,
+				04C8177B2B17179D00B4E10E /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				4A40E68529D0987200026942 /* ImageProcessor.swift */,
+				04C817742B16E34900B4E10E /* ContourDetector.swift */,
+				04C8177D2B1721F300B4E10E /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -496,14 +528,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C817802B17230A00B4E10E /* UserDefaults+Extensions.swift in Sources */,
 				4A40E64029D0145600026942 /* AppDelegate.swift in Sources */,
 				0422DDDD2B15A11E0075E849 /* DispatchQueue+Extensions.swift in Sources */,
 				4A40E64229D0145600026942 /* SceneDelegate.swift in Sources */,
+				04C817852B172A0C00B4E10E /* CGRect+Extensions.swift in Sources */,
+				04C817832B17234A00B4E10E /* Settings.swift in Sources */,
 				4A40E67929D0195C00026942 /* ScanViewController.swift in Sources */,
+				04C8177A2B16F1B300B4E10E /* VNContour+Extensions.swift in Sources */,
 				4A40E68329D095AD00026942 /* CameraView.swift in Sources */,
 				4A40E68629D0987200026942 /* ImageProcessor.swift in Sources */,
+				04C817752B16E34900B4E10E /* ContourDetector.swift in Sources */,
 				4A40E64A29D0145600026942 /* SudokuScanner.xcdatamodeld in Sources */,
 				4A40E67329D015B400026942 /* SplashViewController.swift in Sources */,
+				04C8177C2B17179D00B4E10E /* SettingsView.swift in Sources */,
+				04C8177E2B1721F300B4E10E /* Constants.swift in Sources */,
+				04FE15A32B19D6E9004F18A2 /* UIImage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

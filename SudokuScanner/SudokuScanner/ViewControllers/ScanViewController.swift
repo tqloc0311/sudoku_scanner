@@ -8,21 +8,28 @@
 import Foundation
 import UIKit
 import AVFoundation
+import SnapKit
 
 class ScanViewController: UIViewController {
     
     // MARK: - Outlets
     
     private let closeButton = UIButton(type: .system)
+    private let settingsButton = UIButton(type: .system)
     private let cameraView = CameraView(frame: .zero)
     private let previewImageView = UIImageView(frame: .zero)
-    private let slider = UISlider(frame: .zero)
-    private let sliderLabel = UILabel(frame: .zero)
+    private let settingsView = SettingsView(frame: .zero)
     
     // MARK: - Properties
     lazy var processor: ImageProcessor = {
         return ImageProcessor()
     }()
+    private var isProcessing = false
+    private var isSettingsViewHidden = true {
+        didSet {
+            settingsView.isHidden = isSettingsViewHidden
+        }
+    }
     
     // MARK: - Methods
     
@@ -42,42 +49,31 @@ class ScanViewController: UIViewController {
     
     private func setupLayout() {
         
+        #if targetEnvironment(simulator)
+        let label = UILabel(frame: .zero)
+        view.addSubview(label)
+        label.text = "Camera not available on simulator"
+        label.textColor = .white
+        label.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+        #else
         // add camera view
         view.addSubview(cameraView)
         cameraView.delegate = self
         cameraView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+        #endif
         
         // preview image
         view.addSubview(previewImageView)
-        previewImageView.layer.cornerRadius = 4
-        previewImageView.layer.borderColor = UIColor.white.cgColor
-        previewImageView.layer.borderWidth = 1
         previewImageView.clipsToBounds = true
+        previewImageView.backgroundColor = .black
         previewImageView.snp.makeConstraints { make in
-            make.width.equalToSuperview().multipliedBy(1.0 / 3.0)
-            make.height.equalToSuperview().multipliedBy(1.0 / 3.0)
-            make.leading.equalToSuperview().offset(16)
-            make.bottom.equalTo(view.safeAreaLayoutGuide).inset(16)
-            make.edges.equalToSuperview()
-        }
-        
-        view.addSubview(slider)
-        slider.minimumValue = 0
-        slider.maximumValue = 1
-        slider.value = 0.5
-        slider.addTarget(self, action: #selector(sliderValueChangedHandler(_:)), for: .valueChanged)
-        slider.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview().inset(16)
-//            make.bottom.equalTo(previewImageView.snp.top).inset(-16)
-            make.bottom.equalTo(view.safeAreaLayoutGuide).inset(40)
-        }
-        
-        view.addSubview(sliderLabel)
-        sliderLabel.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview().inset(16)
-            make.bottom.equalTo(slider.snp.top).inset(-16)
+            make.center.equalToSuperview()
+            make.width.equalToSuperview().multipliedBy(0.8)
+            make.height.equalTo(previewImageView.snp.width)
         }
         
         // close button
@@ -90,16 +86,35 @@ class ScanViewController: UIViewController {
             make.leading.equalToSuperview().offset(16)
             make.width.height.equalTo(24)
         }
+        
+        // settings button
+        view.addSubview(settingsButton)
+        settingsButton.setImage(.init(systemName: "gear"), for: .normal)
+        settingsButton.addTarget(self, action: #selector(settingsButtonHandler), for: .touchUpInside)
+        settingsButton.tintColor = .white
+        settingsButton.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(16)
+            make.trailing.equalToSuperview().inset(16)
+            make.width.height.equalTo(24)
+        }
+        
+        // settings view
+        view.addSubview(settingsView)
+        settingsView.isHidden = true
+        settingsView.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview().inset(16)
+            make.bottom.equalTo(view.safeAreaLayoutGuide).inset(16)
+        }
     }
     
     @objc private func closeButtonHandler() {
         dismiss(animated: true)
     }
     
-    @objc private func sliderValueChangedHandler(_ slider: UISlider) {
-        processor.adjustValue = CGFloat(slider.value)
-        sliderLabel.text = "\(slider.value)"
+    @objc private func settingsButtonHandler() {
+        isSettingsViewHidden.toggle()
     }
+    
 }
 
 // MARK: - CameraViewDelegate
@@ -107,10 +122,15 @@ class ScanViewController: UIViewController {
 extension ScanViewController: CameraViewDelegate {
     
     func cameraView(_ view: CameraView, didCapture image: UIImage) {
-//        processor.process(image: image) { [weak self] result in
-//            self?.previewImageView.image = result
-//        }
+        if isProcessing {
+            return
+        }
         
+        isProcessing = true
+        processor.process(image: image) { [weak self] result in
+            self?.previewImageView.image = result
+            self?.isProcessing = false
+        }
     }
     
 }

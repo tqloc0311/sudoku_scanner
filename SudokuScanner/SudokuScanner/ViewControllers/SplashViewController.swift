@@ -58,10 +58,6 @@ class SplashViewController: UIViewController {
 //            make.bottom.equalTo(view.safeAreaLayoutGuide).inset(16)
             make.edges.equalToSuperview()
         }
-        
-        let image = UIImage(named: "sample1")!
-        ImageProcessor().findContours(in: image)
-//        previewImageView.image = demo
     }
     
     @objc private func scanButtonHandler() {
